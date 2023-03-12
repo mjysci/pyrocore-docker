@@ -4,6 +4,9 @@ Docker version of [pyrocore](https://github.com/pyroscope/pyrocore): A collectio
 # Usage
 Fast resume torrent example:
 ```
-docker run --rm -it -v /path/to/data/:/root/data -v /path/to/files:/root/files mjysci/pyrocore "chtor -H '/root/data/folder' ../files/*.torrent -o ../files/new"
+docker run --rm -it -v /path/to/data/:/root/data \
+                -v /path/to/files:/root/files \
+                mjysci/pyrocore \
+                "chtor -H '/root/data/folder' ../files/*.torrent -o ../files/new"
 ```
 Replace `chtor` with other cli commands, check [Manual](https://pyrocore.readthedocs.io/en/latest/usage.html) for details.
