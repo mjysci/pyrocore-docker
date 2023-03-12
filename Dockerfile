@@ -10,3 +10,4 @@ RUN apk add --no-cache git bash && \
     apk del git bash
 ENV PATH=$PATH:/root/bin
 WORKDIR /root/bin
+ENTRYPOINT ["/bin/sh", "-c"]
